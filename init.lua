@@ -197,12 +197,6 @@ vim.o.mouse = 'a'
 --  See `:help 'clipboard'`
 vim.o.clipboard = 'unnamedplus'
 
--- Set scrollof
-vim.o.scrolloff = 10
-
--- Set relative numbers
-vim.o.relativenumber = true
-
 -- Enable break indent
 vim.o.breakindent = true
 
