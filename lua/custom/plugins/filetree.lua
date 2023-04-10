@@ -15,6 +15,9 @@ return {
       window = {
         position = "right",
       },
+      filesystem = {
+        follow_current_file = true,
+      },
       event_handlers = {
         -- Auto close when open a file
         {
