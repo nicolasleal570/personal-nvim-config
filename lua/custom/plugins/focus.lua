@@ -28,8 +28,8 @@ require('zen-mode').setup {
     width = 120,
     height = 1,
     options = {
-      number = false,
-      relativenumber = false,
+      number = true,
+      relativenumber = true,
       cursorline = false,
       cursorcolumn = false,
       foldcolumn = '0',
