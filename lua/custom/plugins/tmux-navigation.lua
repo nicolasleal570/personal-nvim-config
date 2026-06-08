@@ -10,7 +10,6 @@ nav.setup {
     up = '<C-k>',
     right = '<C-l>',
     last_active = '<C-\\>',
-    next = '<C-Space>',
   },
 }
 
@@ -19,4 +18,3 @@ vim.keymap.set('n', '<C-j>', nav.NvimTmuxNavigateDown, { desc = 'Navigate down (
 vim.keymap.set('n', '<C-k>', nav.NvimTmuxNavigateUp, { desc = 'Navigate up (tmux/nvim)' })
 vim.keymap.set('n', '<C-l>', nav.NvimTmuxNavigateRight, { desc = 'Navigate right (tmux/nvim)' })
 vim.keymap.set('n', '<C-\\>', nav.NvimTmuxNavigateLastActive, { desc = 'Navigate to last active pane' })
-vim.keymap.set('n', '<C-Space>', nav.NvimTmuxNavigateNext, { desc = 'Navigate to next pane' })
