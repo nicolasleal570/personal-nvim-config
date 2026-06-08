@@ -424,7 +424,18 @@ do
   -- - saiw) - [S]urround [A]dd [I]nner [W]ord [)]Paren
   -- - sd'   - [S]urround [D]elete [']quotes
   -- - sr)'  - [S]urround [R]eplace [)] [']
-  require('mini.surround').setup()
+  require('mini.surround').setup {
+    -- Use 'gz' prefix to free up 's' in visual mode (default vim substitute).
+    mappings = {
+      add = 'gza',
+      delete = 'gzd',
+      find = 'gzf',
+      find_left = 'gzF',
+      highlight = 'gzh',
+      replace = 'gzr',
+      update_n_lines = 'gzn',
+    },
+  }
 
   -- Simple and easy statusline.
   --  You could remove this setup call if you don't like it,
